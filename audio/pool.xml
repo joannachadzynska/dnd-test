@@ -1,0 +1,16 @@
+<exercise shufflePool="1" onWrongChangeIndex="0">
+    <pool attempt="1">
+        <item audio="audio_1" itemInstruction="Który jeż jest większy?"/>
+        <item audio="audio_2" itemInstruction="Który jeż jest mniejszy?"/>
+        <item audio="audio_3" itemInstruction="Które ciastko jest większe?"/>
+        <item audio="audio_4" itemInstruction="Które ciastko jest mniejsze?"/>
+        <item audio="audio_5" itemInstruction="Który telewizor jest większy?"/>
+        <item audio="audio_6" itemInstruction="Który telewizor jest mniejszy?"/>
+        <item audio="audio_7" itemInstruction="Który samochód jest dłuższy?"/>
+        <item audio="audio_8" itemInstruction="Który samochód jest krótszy?"/>
+        <item audio="audio_9" itemInstruction="Która drabina jest dłuższa?"/>
+        <item audio="audio_10" itemInstruction="Która drabina jest krótsza?"/>
+    </pool>
+</exercise>
+
+

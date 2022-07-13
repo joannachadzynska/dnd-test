@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, .mq-root-block {
+    font-family: "Open Sans", Symbola, "Times New Roman", serif;
+}
+input {
+    border: 1px solid black;
+}
+body input.wrong, body .mq-editable-field.wrong, body .mq-math-mode .mq-editable-field.mq-focused.wrong {
+    border: 1px solid red;
+}
+
+/*
+ * Takie rozwiązanie zapobiega wyświetlaniu dziwnych znaków na końcu linii w IE (https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/10160748/).
+ */
+br {
+    font-size: 0 !important;
+}
+
+.locked {
+    pointer-events: none !important;
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;;
+    user-select: none !important;
+}
+
+#animation_container, .animation_container {
+    position: absolute;
+    /*background-color:rgba(255, 255, 255, 1.00);*/
+    background-color: transparent;
+}
+#canvas, .canvas {
+    position: absolute;
+    display: block;
+    /*background-color:rgba(255, 255, 255, 1);*/
+    background-color: transparent;
+}
+#dom_overlay_container, .dom_overlay_container {
+    pointer-events:none;
+    overflow:hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+}
+
+.ui-label {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.text-with-inputs {
+    display: block !important;
+    align-items: center;
+}
+.text-with-inputs_text {
+    font-family: "Cambria", "Times New Roman", serif;
+}
+.text-with-inputs_input {
+    position: relative !important;
+    transform: none !important;
+    vertical-align: 10%;
+}
+.text-with-inputs_input-wrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+.text-with-inputs_input.ui-textinput {
+    vertical-align: 0;
+}
+
+.mq-editable-field[data-align="center"] .mq-root-block {
+    text-align: center;
+}
+.mq-editable-field[data-align="right"] .mq-root-block {
+    text-align: right;
+}
+
+.valign-bottom > div {
+    align-self: flex-end;
+}
+.valign-top > div {
+    align-self: flex-start;
+}
+.valign-middle {
+    align-items: center;
+}
+.halign-center > div {
+    margin: 0 auto;
+}
+.halign-left > div {
+    margin-right: auto;
+}
+.halign-right > div {
+    margin-left: auto;
+}
+
+.sync-wrapper {
+    display: inline-block;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    visibility: hidden;
+}
+
+.pointer-events-none {
+    pointer-events: none !important;
+}
+
+.pointer-events-all {
+    pointer-events: all;
+}
+
+input {
+    font-size: 8vh;
+    /* padding: 1vh 1vh; */
+    outline: none;
+}
+
+span.colon {
+    display: inline-block;
+    transform: translate(0px, -2px);
+    margin: 0 0.15em;
+}
+
+/*
+mq field
+ */
+.mq-editable-field.locked .mq-cursor {
+    display: none;
+}
+
+.mq-editable-field.mq-focused, .mq-math-mode .mq-editable-field.mq-focused {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid gray;
+}
+
+/*
+mq szpachle
+ */
+.mq-math-mode sup.mq-nthroot {
+    vertical-align: 0.6em;
+    margin-right: -0.72em;
+}
+
+.mq-math-mode .mq-supsub.mq-sup-only {
+    font-size: 80%;
+}
+.mq-math-mode .mq-supsub.mq-sup-only .mq-sup {
+    display: block;
+    bottom: -1px;
+    position: relative
+}
+
+.mq-math-mode .mq-paren {
+    padding: 0;
+    /*transform-origin: center .6em;*/
+}
+.mq-brackets-wrapper {
+    margin: 0 -2px;
+}
+.mq-math-mode .mq-sqrt-stem {
+    border-top: 0.06em solid black;
+    margin-top: 0px;
+    transform: translate(-0.02em, 0.02em);
+    font-smoothing: subpixel-antialiased;
+}
+
+.mq-math-mode .mq-denominator {
+    padding-top: 0.06em;
+    border-top-width: 0.0625em;
+}
+
+.mq-math-mode .mq-numerator {
+    padding-bottom: 0.07em;
+}
+
+/*
+mq szpachle pod myriad
+ */
+.mq-math-mode sup.mq-nthroot {
+    vertical-align: 0.75em;
+    margin-right: -0.45em;
+}
+.mq-brackets-wrapper {
+    /*vertical-align: 1.2em;*/
+}
+.mq-math-mode .mq-fraction {
+    vertical-align: -0.5em;
+}
+.mq-math-mode .mq-paren + span {
+    margin-top: 0;
+}
+
+.mq-math-mode var, .mq-math-mode .mq-text-mode, .mq-math-mode .mq-nonSymbola {
+    font-family: "Cambria", "Times New Roman", serif;
+}
+
+.animation_container[data-layer="top"] {
+    pointer-events: none;
+}
+
+/** mq-input-sqrt */
+.mq-editable-field .math-sqrt-child .mq-cursor {
+    display: none;
+}
+.mq-editable-field .math-sqrt-child > .math-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/** fixy dla safari */
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+input::-webkit-textfield-decoration-container {
+    display: none;
+}
+
+@font-face {
+    font-family:'Cambria';
+    src: url('fonts/Cambria Bold.eot');
+    src: url('fonts/Cambria Bold.eot?#iefix') format('eot'),
+    url('fonts/Cambria Bold.woff2') format('woff2'),
+    url('fonts/Cambria Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0021-2265;
+}
+
+@font-face {
+    font-family:'Cambria';
+    src: url('fonts/Cambria Italic.eot');
+    src: url('fonts/Cambria Italic.eot?#iefix') format('eot'),
+    url('fonts/Cambria Italic.woff2') format('woff2'),
+    url('fonts/Cambria Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0021-2265;
+}
+
+@font-face {
+    font-family:'Cambria';
+    src: url('fonts/Cambria Bold Italic.eot');
+    src: url('fonts/Cambria Bold Italic.eot?#iefix') format('eot'),
+    url('fonts/Cambria Bold Italic.woff2') format('woff2'),
+    url('fonts/Cambria Bold Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0021-2265;
+}
+
+@font-face {
+    font-family:'Cambria';
+    src: url('fonts/Cambria.eot');
+    src: url('fonts/Cambria.eot?#iefix') format('eot'),
+    url('fonts/Cambria.woff2') format('woff2'),
+    url('fonts/Cambria.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0021-22FE;
+}
+
+/*********************************************************************/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-SemiboldItalic.eot');
+    src: url('fonts/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-SemiboldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans.eot');
+    src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans.woff2') format('woff2'),
+        url('fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSansLight-Italic.eot');
+    src: url('fonts/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSansLight-Italic.woff2') format('woff2'),
+        url('fonts/OpenSansLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Italic.eot');
+    src: url('fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Italic.woff2') format('woff2'),
+        url('fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-BoldItalic.eot');
+    src: url('fonts/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-BoldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-ExtraboldItalic.eot');
+    src: url('fonts/OpenSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-ExtraboldItalic.woff2') format('woff2'),
+        url('fonts/OpenSans-ExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Semibold.eot');
+    src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('fonts/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('fonts/OpenSans-Semibold.eot');
+    src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('fonts/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('fonts/OpenSans-Semibold.eot');
+    src: url('fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Semibold.woff2') format('woff2'),
+        url('fonts/OpenSans-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans.eot');
+    src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans.woff2') format('woff2'),
+        url('fonts/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Extrabold.eot');
+    src: url('fonts/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Extrabold.woff2') format('woff2'),
+        url('fonts/OpenSans-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Light.eot');
+    src: url('fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Light.woff2') format('woff2'),
+        url('fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.eot');
+    src: url('fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_blackitalic.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN Bold';
+    src: url('fonts/Naomi_bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_bolditalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_heavy.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_heavyitalic.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_italic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_light.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_lightitalic.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN Medium';
+    src: url('fonts/Naomi_medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_mediumitalic.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NaomiSans EFN';
+    src: url('fonts/Naomi_regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}

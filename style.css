@@ -1,0 +1,4 @@
+.animation_container[data-layer="dndAnimations"],
+.animation_container[data-layer="dndDrag"] {
+    pointer-events: none;
+}

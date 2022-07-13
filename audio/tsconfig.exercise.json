@@ -1,0 +1,9 @@
+{
+    "extends": "../../../tsconfig.exercises.json",
+    "compilerOptions": {
+        "outFile": "boot.js"
+    },
+    "files": [
+        "boot.ts"
+    ]
+}

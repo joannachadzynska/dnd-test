@@ -1,0 +1,31 @@
+<exercise shufflePool="1" onWrongChangeIndex="0">
+<pool attempt="1" scenes="0" slotsCounter="2">
+    <item audio="exer_1_4_1" itemInstruction="Umieść chipsy wewnątrz koszyka." scene="0" item="0" target="0"/>
+    <item audio="exer_1_4_2" itemInstruction="Umieść banana wewnątrz koszyka." scene="0" item="1" target="0"/>
+    <item audio="exer_1_4_3" itemInstruction="Umieść sok wewnątrz koszyka." scene="0" item="2" target="0"/>
+    <item audio="exer_1_4_4" itemInstruction="Umieść jabłko wewnątrz koszyka." scene="0" item="3" target="0"/>
+    <item audio="exer_1_4_5" itemInstruction="Umieść jogurt wewnątrz koszyka." scene="0" item="4" target="0"/>
+    <item audio="exer_1_4_6" itemInstruction="Umieść mleko na zewnątrz koszyka." scene="0" item="5" target="1"/>
+    <item audio="exer_1_4_7" itemInstruction="Umieść marchewkę na zewnątrz koszyka." scene="0" item="6" target="1"/>
+    <item audio="exer_1_4_8" itemInstruction="Umieść napój w puszce na zewnątrz koszyka." scene="0" item="7"
+          target="1"/>
+    <item audio="exer_1_4_9" itemInstruction="Umieść pomarańczę na zewnątrz koszyka." scene="0" item="8"
+          target="1"/>
+    <item audio="exer_1_4_10" itemInstruction="Umieść płyn do naczyń na zewnątrz koszyka." scene="0" item="9"
+          target="1"/>
+</pool>
+<pool attempt="1" scenes="1,2" slotsCounter="6">
+    <item audio="exer_1_4_17" itemInstruction="Połóż kapcie przed łóżkiem." scene="1" item="0" target="0"/>
+    <item audio="exer_1_4_18" itemInstruction="Postaw stół pod oknem." scene="1" item="1" target="1"/>
+    <item audio="exer_1_4_19" itemInstruction="Połóż książkę przy doniczce." scene="1" item="2" target="2"/>
+    <item audio="exer_1_4_20" itemInstruction="Posadź maskotkę na półce." scene="1" item="3" target="3"/>
+    <item audio="exer_1_4_21" itemInstruction="Zawieś obraz nad łóżkiem." scene="1" item="4" target="4"/>
+    <item audio="exer_1_4_22" itemInstruction="Postaw samochód przed komodą" scene="1" item="5" target="5"/>
+    <item audio="exer_1_4_23" itemInstruction="Połóż psa przed łóżkiem." scene="2" item="0" target="0"/>
+    <item audio="exer_1_4_24" itemInstruction="Zawieś grzejnik pod oknem." scene="2" item="1" target="1"/>
+    <item audio="exer_1_4_25" itemInstruction="Zawieś półkę nad komodą." scene="2" item="2" target="2"/>
+    <item audio="exer_1_4_26" itemInstruction="Połóż kota na łóżku." scene="2" item="3" target="3"/>
+    <item audio="exer_1_4_27" itemInstruction="Postaw globus obok doniczki." scene="2" item="4" target="4"/>
+    <item audio="exer_1_4_28" itemInstruction="Postaw lampkę na parapecie." scene="2" item="5" target="5"/>
+</pool>
+</exercise>

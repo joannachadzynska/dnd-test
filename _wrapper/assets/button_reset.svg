@@ -1,0 +1,120 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60">
+<defs>
+<filter id="Filter_1" x="-32.27326838446488%" y="-32.27326838446488%" width="164.54653676892974%" height="164.54653676892974%" color-interpolation-filters="sRGB">
+<feFlood flood-color="#FFFFFF" flood-opacity="1" in="SourceGraphic" result="result1"/>
+
+<feComposite in2="SourceGraphic" in="result1" operator="in" result="result2"/>
+
+<feGaussianBlur in="result2" stdDeviation="1.3333333333333333,1.3333333333333333" result="result3"/>
+
+<feFlood flood-color="#333333" flood-opacity="1" in="SourceGraphic" result="result4"/>
+
+<feComposite in2="SourceGraphic" in="result4" operator="in" result="result5"/>
+
+<feGaussianBlur in="result5" stdDeviation="1.3333333333333333,1.3333333333333333" result="result6"/>
+
+<feOffset dx="3.5355339059327378" dy="3.5355339059327378" in="result3" result="result7"/>
+
+<feOffset dx="-3.5355339059327378" dy="-3.5355339059327378" in="result3" result="result8"/>
+
+<feOffset dx="-3.5355339059327378" dy="-3.5355339059327378" in="result6" result="result9"/>
+
+<feOffset dx="3.5355339059327378" dy="3.5355339059327378" in="result6" result="result10"/>
+
+<feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 255 0 0 0 0 255 0 0 0 0 255 0 0 0 255 0" result="result11"/>
+
+<feFlood flood-color="#000000" flood-opacity="0" in="SourceGraphic" result="result12"/>
+
+<feComposite in2="result8" in="result7" operator="arithmetic" k1="0" k2="-1" k3="1" k4="0" result="result13"/>
+
+<feComposite in2="result10" in="result9" operator="arithmetic" k1="0" k2="-1" k3="1" k4="0" result="result14"/>
+
+<feComposite in2="result12" in="result13" operator="xor" result="result15"/>
+
+<feComposite in2="result15" in="result14" operator="xor" result="result16"/>
+
+<feComposite in2="result11" in="result16" operator="in" result="result17"/>
+
+<feBlend mode="normal" in2="SourceGraphic" in="result17" result="result18"/>
+
+<feFlood flood-color="#666666" flood-opacity="1" in="result18" result="result19"/>
+
+<feGaussianBlur in="result18" stdDeviation="1,1" result="result20"/>
+
+<feComposite in2="result20" in="result19" operator="in" result="result21"/>
+
+<feComposite in2="result21" in="result18" operator="over" result="result22"/>
+</filter>
+
+<g id="okno_zadania_assets_Tween_1_reset_0_Layer0_0_FILL">
+<path fill="#999999" stroke="none" d="
+M 28.25 -28.3
+Q 16.55 -40 0 -40 -16.55 -40 -28.3 -28.3 -40 -16.55 -40 0 -40 16.55 -28.3 28.25 -16.55 40 0 40 16.55 40 28.25 28.25 40 16.55 40 0 40 -16.55 28.25 -28.3 Z"/>
+</g>
+
+<font horiz-adv-x="2048">
+<!--  Font Name: Franklin Gothic Demi
+Vendor ID: ITC 
+ ITC Franklin Gothic is a trademark of The International Typeface Corporation which may be registered in certain jurisdictions. Portions copyright Microsoft Corporation.  All rights reserved.
+http://www.itcfonts.com/itc/licensing.html
+URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=ITC&Name=Franklin%20Gothic%20Demi&PSName=FranklinGothic-Demi&applanguage=en_US-->
+<font-face font-family="Franklin_Gothic_Demi_Regular" units-per-em="2048" ascent="1877" descent="445"/>
+
+<hkern u1="R" u2="e" k="35"/>
+
+<glyph unicode="R" horiz-adv-x="1346" d="
+M 459 1122
+L 459 774 655 774
+Q 751 774 795 787 838 801 872 847 906 894 906 954 906 1011 872 1056 838 1101 798 1111 758 1122 648 1122
+L 459 1122 Z
+M 459 541
+L 459 0 137 0 137 1365 737 1365
+Q 903 1365 1004 1327 1104 1288 1170 1185 1236 1082 1236 956 1236 710 999 603
+L 1251 0 898 0 688 541 459 541 Z"/>
+
+<glyph unicode="e" horiz-adv-x="1095" d="
+M 1030 455
+L 380 455
+Q 379 428 379 408 379 300 437 245 494 190 574 190 723 190 753 349
+L 1023 329
+Q 910 -21 564 -21 413 -21 308 39 202 100 134 216 65 332 65 494 65 735 203 883 340 1031 556 1031 751 1031 891 893 1030 756 1030 455 Z
+M 379 628
+L 738 628
+Q 724 836 567 836 399 836 379 628 Z"/>
+
+<glyph unicode="s" horiz-adv-x="969" d="
+M 879 766
+L 662 708
+Q 624 845 465 845 315 845 315 754 315 718 342 696 370 675 486 660 659 637 742 607 825 577 874 506 922 435 922 331 922 175 804 77 685 -21 472 -21 86 -21 11 278
+L 262 315
+Q 293 179 486 179 560 179 611 206 662 232 662 277 662 347 549 360 243 398 147 477 50 557 50 699 50 843 162 937 274 1031 476 1031 636 1031 732 968 828 905 879 766 Z"/>
+
+<glyph unicode="t" horiz-adv-x="720" d="
+M 459 778
+L 459 351
+Q 459 271 483 244 507 217 595 217 636 217 690 221
+L 690 0
+Q 560 -22 503 -22 317 -22 239 49 161 121 161 308
+L 161 778 1 778 1 1010 178 1010 202 1308 459 1328 459 1010 676 1010 676 778 459 778 Z"/>
+</font>
+</defs>
+
+<g filter="url(#Filter_1)" transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g id="resetButton" transform="matrix( 0.75, 0, 0, 0.75, 30.5,30.5) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#okno_zadania_assets_Tween_1_reset_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g id="buttonLabel" transform="matrix( 1, 0, 0, 1, -34,-11.35) ">
+<clipPath id="Mask_Mask_1">
+<rect x="-2" y="-2" width="72" height="26.7" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_1)" writing-mode="lr"><tspan x="8.65" y="18.35" baseline-shift="0%" kerning="auto" font-family="Franklin_Gothic_Demi_Regular" font-size="20" fill="#FFFFFF" xml:space="preserve">Reset</tspan></text>
+</g>
+</g>
+</g>
+</svg>

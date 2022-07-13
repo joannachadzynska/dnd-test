@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../../_assets/polyfills.js"></script>
+        <script src="../../_assets/vendor/rxjs.js"></script>
+        <script src="../../_assets/preloader.js"></script>
+        <script src="../../_assets/vendor/fontfaceobserver.js"></script>
+        <script src="../../_assets/vendor/createjs.js"></script>
+        <script src="../../_assets/vendor/xmljs.js"></script>
+        <script src="../../_assets/vendor/require.js"></script>
+        <script src="../../_assets/vendor/jquery.js"></script>
+        <script src="../../_assets/vendor/mq/mathquill.js"></script>
+        <link rel="stylesheet" href="../../_assets/vendor/mq/mathquill.css">
+        <link rel="stylesheet" href="../../_assets/global.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+    </head>
+<body data-exercise-type="M4Junior">
+
+<div class="animation_container" data-layer="default">
+    <canvas class="canvas" data-base-width="930" data-base-height="655"></canvas>
+    <div id="dom_overlay_container" class="dom_overlay_container"></div>
+</div>
+
+<script src="../../_assets/fix.js"></script>
+<script src="boot.js"></script>
+<script>
+    require.config({ baseUrl: '../../_assets/vendor' });
+    function boot() { require(['Matlandia_Junior/audio/boot']) }
+    preload('audio.js', boot);
+</script>
+</body>
+</html>
